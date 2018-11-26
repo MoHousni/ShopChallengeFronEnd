@@ -1,0 +1,31 @@
+<div class="main">
+
+  <section class="signup">
+      <!-- <img src="images/signup-bg.jpg" alt=""> -->
+      <div class="container">
+          <div class="signup-content">
+              <form role="form" (submit)="login()" id="signup-form" class="signup-form">
+                  <h2 class="form-title">Sing in</h2>
+                  <div class="form-group">
+                      <input type="email" class="form-input" [(ngModel)]="credentials.email" #email="ngModel" name="email" id="email" placeholder="Your Email" required/>
+                  </div>
+                  <div class="form-group">
+                      <input type="password" class="form-input" [(ngModel)]="credentials.password" #password="ngModel" name="password" id="password" placeholder="Password" required/>
+                      <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                  </div>
+                  <div class="form-group">
+                      <input type="submit" name="submit" id="submit" class="form-submit" value="Sign in"/>
+                  </div>
+              </form>
+              <p class="loginhere">
+                  New user ? <a href="/singup" class="loginhere-link">registre here</a>
+              </p>
+              <div class="alert" *ngIf="app.error">
+                  There was a problem logging in. Please try again.
+              </div>
+          </div>
+          
+      </div>
+  </section>
+
+</div>

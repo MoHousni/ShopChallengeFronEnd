@@ -1,0 +1,17 @@
+.mybtn{
+    padding: 0% !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .mybtn>a{
+    padding: 4% !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .mybtn>.btn-secondary{
+    margin-left: 2% !important;
+  }
+  .media-container-row {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: wrap;
+  }
